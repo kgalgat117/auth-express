@@ -1,0 +1,1 @@
+curl -X POST --user 58i8jnfohtdut8qi3u6j165gc5elms61h3c2h6nmgj8b 'https://toms.auth.us-east-1.amazoncognito.com/oauth2/token?grant_type=client_credentials' -H 'Content-Type: application/x-www-form-urlencoded'
