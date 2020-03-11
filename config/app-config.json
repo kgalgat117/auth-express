@@ -1,8 +1,8 @@
 {
-    "region": "eu-west-2",
-    "userPool": "eu-west-2_z1Go5XdrZ",
-    "userPoolBaseUri": "https://auth-cognito-demo.arronharden.com",
-    "clientId": "4tnp4k64d5v4ah9dud3pj1kbs0",
+    "region": "us-east-1",
+    "userPool": "us-east-1_ycSXZOTTM",
+    "userPoolBaseUri": "https://toms.auth.us-east-1.amazoncognito.com",
+    "clientId": "58i8jpbrphv3dheat3ea37uv88",
     "callbackUri": "https://cognito-demo.arronharden.com/callback",
     "signoutUri": "https://cognito-demo.arronharden.com",
     "tokenScopes": [
