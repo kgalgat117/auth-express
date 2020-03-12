@@ -6,20 +6,26 @@
 
 var app = require('../app');
 var debug = require('debug')('cognito-express-test:server');
-var http = require('http');
+// var http = require('http');
+const https = require('https');
+const fs = require('fs');
+
+const key = fs.readFileSync('localhost-key.pem')
+const cert = fs.readFileSync('localhost.pem')
 
 /**
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '3000');
+var port = normalizePort(process.env.PORT || '4200');
 app.set('port', port);
 
 /**
  * Create HTTP server.
  */
 
-var server = http.createServer(app);
+// var server = http.createServer(app);
+var server = https.createServer({key, cert}, app)
 
 /**
  * Listen on provided port, on all network interfaces.
