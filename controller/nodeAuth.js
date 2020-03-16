@@ -40,7 +40,10 @@ function userCreate() {
             email: `${user}@gmail.com`,
             username: user,
             password: 'Password#123',
-            connection: 'Username-Password-Authentication'
+            connection: 'Username-Password-Authentication',
+            user_metadata: {
+                
+            }
         }).then(response => {
             console.log(response)
             resolve(response)
